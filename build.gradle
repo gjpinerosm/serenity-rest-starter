@@ -11,8 +11,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.7")
-        classpath("net.serenity-bdd:serenity-emailer:2.0.7")
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.17")
+        classpath("net.serenity-bdd:serenity-emailer:2.0.17")
     }
 }
 
@@ -31,6 +31,7 @@ dependencies {
             libs.logback
 
     testCompile libs.test.serenity.core,
+            libs.test.serenity.junit,
             libs.test.serenity.rest,
             libs.test.serenity.screenplay,
             libs.test.serenity.screenplayRest,

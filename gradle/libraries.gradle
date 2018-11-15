@@ -1,7 +1,7 @@
 ext{
     slf4jVersion = '1.7.7'
-    serenityCoreVersion = '2.0.7'
-    serenityCucumberVersion = '1.9.18'
+    serenityCoreVersion = '2.0.17'
+    serenityCucumberVersion = '1.9.20'
     junitVersion='4.12'
     assertJVersion='3.8.0'
     logbackVersion='1.2.3'
@@ -13,6 +13,7 @@ ext{
             test: [
                     serenity: [
                             core: "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+                            junit: "net.serenity-bdd:serenity-junit:${serenityCoreVersion}",
                             screenplay: "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
                             gradle: "net.serenity-bdd:serenity-gradle-plugin:${serenityCoreVersion}",
                             emailer: "net.serenity-bdd:serenity-emailer:${serenityCoreVersion}",
